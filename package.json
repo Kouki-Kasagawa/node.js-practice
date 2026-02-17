@@ -1,0 +1,24 @@
+{
+  "name": "node.js-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouki-Kasagawa/node.js-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kouki-Kasagawa/node.js-practice/issues"
+  },
+  "homepage": "https://github.com/kouki-Kasagawa/node.js-practice#readme",
+  "devDependencies": {
+    "http": "^0.0.1-security"
+  }
+}

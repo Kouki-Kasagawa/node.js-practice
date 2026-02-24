@@ -1,5 +1,3 @@
-const mysql = require("mysql2")
-
 const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
@@ -9,6 +7,16 @@ const connection = mysql.createConnection({
     database: "practice_db"
 });
 
-connection.query("SELECT * FROM users", (err, results) => {
+
+console.log("クエリ実行前");
+
+connection.query(
+    "INSERT INTO user (name) VALUES (?)",
+    ["Hanachan"],
+    (err, results) => {
+    console.log("クエリ実行後");
     console.log(results);
-});
+    }
+);
+
+console.log("クエリ投げた直後");
